@@ -1,6 +1,12 @@
 <ul>
   <li *ngFor="let item of list; trackBy:trackByFunction">{{item.id}}</li>
 </ul>
+
+<ul *ngFor="let item of list2; trackBy:trackByFunction2">
+  <li >{{item.id}}</li>
+  <li >{{item.name}}</li>
+</ul>
+
 <button (click)="getItems()">Refresh items</button>
 <p>Only last item refresh, check html on developer tool </p>
 
